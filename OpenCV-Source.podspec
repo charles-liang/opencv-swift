@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     ]
 
     s.prepare_command = <<-CMD
-        /usr/bin/python opencv/platforms/apple/build_xcframework.py build/xcframework
+        python3 opencv/platforms/apple/build_xcframework.py build/xcframework
         cp -a ./build/xcframework/opencv2.xcframework ./opencv2.xcframework
     CMD
 end
